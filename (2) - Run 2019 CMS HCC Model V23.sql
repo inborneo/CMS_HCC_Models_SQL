@@ -507,7 +507,7 @@ WHERE	( A.LOOKUP_KEY = B.LOOKUP_KEY)
 SECOND OUTPUT TABLE. This is not in the CMS SAS model, but I think it is useful. This is a list of HCCs for each beneficiary
 
 \***********************************************************************************************/
-SELECT HICN, Cname HCC, data 
+SELECT HICN, Cname HCC 
 into dbo.HCC_output
 from dbo.table_3
 CROSS APPLY ( 
