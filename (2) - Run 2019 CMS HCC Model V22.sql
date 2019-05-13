@@ -41,7 +41,7 @@ CMS SAS code requires the Person file to have the following variables:
  ----HICN. This can be any ID as long as you rename it  "HICN"...bene id, member id, actual HICN, MBI, whatever. Needs to be unique id for each beneficiary and needs to be named HICN
  ----DOB. in date format.  date of birth
  ----SEX. one character, 1=male; 2=female. For the record, I did not decide on this logic...CMS did. 
- ----OREC. one character. original reason for entitlement 0 - OLD AGE (OASI), 1 - DISABILITY (DIB), 2 – ESRD, 3 - BOTH DIB AND ESRD
+ ----OREC. one character. original reason for entitlement 0 - OLD AGE (OASI), 1 - DISABILITY (DIB), 2 â€“ ESRD, 3 - BOTH DIB AND ESRD
  ----MEDICAID. one character. =1 if number of months in Medicaid in PAYMENT year >0, 0 otherwise.
 			Instead of having LTIMCAID and NEMCAID I decided to just use one Medicaid field.
  ----MODEL. This refers to the risk adjustment model to be used for each beneficiary. The biggest difference between this code and the CMS SAS code 
@@ -482,7 +482,7 @@ WHERE	( A.LOOKUP_KEY = B.LOOKUP_KEY)
 SECOND OUTPUT TABLE. This is not in the CMS SAS model, but I think it is useful. This is a list of HCCs for each beneficiary
 
 \***********************************************************************************************/
-SELECT HICN, Cname HCC, data 
+SELECT HICN, Cname HCC 
 into dbo.HCC_output
 from dbo.table_3
 CROSS APPLY ( 
