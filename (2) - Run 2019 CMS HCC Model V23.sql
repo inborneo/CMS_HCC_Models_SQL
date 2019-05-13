@@ -7,7 +7,7 @@
 /***********************************************************************************************
 INSTRUCTIONS.
 
-BEFORE CONTINUTING. Please note that this code requires you to have already run the '(0) - Load Standard Tables' query using the same database. 
+BEFORE CONTINUING. Please note that this code requires you to have already run the '(0) - Load Standard Tables' query using the same database. 
 If you have not already done so, please run this code.
 
 There are two inputs and two outputs in this code. The two inputs will require manual effort to create the first time you run this code. Assuming
