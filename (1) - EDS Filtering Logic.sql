@@ -62,7 +62,7 @@ https://www.resdac.org/sites/resdac.umn.edu/files/Claim%20Type%20Code%20Table_0.
 select distinct a.CLM_CNTL_NUM
 into dbo.EDS_PHYS
 from dbo.CLAIMS a ---edit to fit your data
-join dbo.MEDICARE_CPT_HCPCS_LIST b on a.HCPCS_CD=b.HCPCS_CPT and year(a.CLM_THRU_DT)=b.CY
+join dbo.MEDICARE_CPT_HCPCS_LIST b on a.HCPCS_CD=b.HCPCS_CPT_CODE and year(a.CLM_THRU_DT)=b.CY
 where a.CLM_TYPE_CD = '4700' ---physician claims only
 ---also consider limiting to only a specific year depending on the size of you dataset.
 
